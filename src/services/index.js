@@ -2,7 +2,7 @@ import axios from "axios";
 import cookie from 'react-cookies';
 import {ErrorType} from "./type";
 
-const staticServerUri = process.env.REACT_APP_PATH || process.env.REACT_APP_API_URL;
+const staticServerUri = process.env.REACT_APP_PATH ? process.env.REACT_APP_PATH + '/api' : process.env.REACT_APP_API_URL;
 
 const api = axios.create({
     baseURL: staticServerUri,
