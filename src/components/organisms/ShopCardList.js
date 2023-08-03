@@ -46,7 +46,7 @@ const ProductCardList = ({data}) => {
             {data.pages.map((page) => (
                 page.data.map(({id, productName, image, price}) => (
                     <ProductCard key={"product" + id} id={id} title={productName}
-                                 link={"product/" + id}
+                                 link={"/product/" + id}
                                  image={image} price={price}/>
                 ))
             ))}
