@@ -2,7 +2,7 @@ import CartOptionCard from "../molecules/CartOptionCard";
 import PaymentOptionCard from "../molecules/PaymentOptionCard";
 
 const ProductWithOptionCard = ({id, productName, carts, canControl = true}) => {
-    const imageUrl = process.env.REACT_APP_API_URL + "/images/" + id + ".jpg";
+    const imageUrl = process.env.REACT_APP_PATH || process.env.REACT_APP_API_URL + "/images/" + id + ".jpg";
 
     return (
         <div className="cart-product-card">

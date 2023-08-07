@@ -48,7 +48,7 @@ function Carousel({width = "100%", height = "400px", imgList = [], intervalTime 
         zIndex: 10
 
     }
-    
+
     return (
         <div style={{
             width: width,
@@ -84,7 +84,7 @@ function Carousel({width = "100%", height = "400px", imgList = [], intervalTime 
                             return (<div style={{width: '100%', height: '100%', flex: '1 0 100%'}} key={index}>
                                 <img
                                     style={{width: '100%', height: '100%', objectFit: 'cover'}}
-                                    src={url} alt={index.toString()}/>
+                                    src={process.env.PUBLIC_URL + url} alt={index.toString()}/>
                             </div>);
                         }
                     )

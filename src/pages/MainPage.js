@@ -4,9 +4,9 @@ import ShopCardList from "../components/organisms/ShopCardList";
 const MainPage = () => {
 
     const imageUrlList = [
-        './carouselItem1.jpeg',
-        './carouselItem2.jpeg',
-        './carouselItem3.jpeg',
+        '/carouselItem1.jpeg',
+        '/carouselItem2.jpeg',
+        '/carouselItem3.jpeg',
     ]
 
     return (
