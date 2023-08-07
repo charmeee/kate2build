@@ -29,11 +29,11 @@ const ProductPage = () => {
     if (isLoading) return <LoadingPage/>
     if (isError) return <ErrorPage error={error}/>
 
-    const {image} = data;
+    const {id, image} = data;
 
     return (
         <div className="flex py-10 flex-wrap justify-center">
-            <ProductImgInfo img={image}/>
+            <ProductImgInfo img={id}/>
             <ProductInfo product={data} showDialog={showDialog}/>
             <Dialog ref={modalRef} title={modalTitle} subTitle={modalSubTitle}
                     continueName="이동" link="/cart"/>

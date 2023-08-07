@@ -10,7 +10,7 @@ export const ProductCard = ({id, title, image, link, price}) => {
                     <img
                         loading="lazy"
                         className="object-cover hover:ease-out hover:scale-105 transition-all duration-500 "
-                        src={process.env.REACT_APP_PATH || process.env.REACT_APP_API_URL + image}
+                        src={process.env.PUBLIC_URL + `/images/${id}.jpg`}
                         alt={title}
                     />
                 </div>
